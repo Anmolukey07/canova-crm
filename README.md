@@ -21,14 +21,6 @@ An end-to-end CRM project with a modern admin dashboard, user-side workflow, and
 
 - 🌐 **User Side:** https://canova-crm-frontend.netlify.app/user/login
 - 🧭 **Management Side:** https://canova-crm-frontend.netlify.app/admin/dashboard
-- ⚙️ **Backend Health:** https://canova-crm-ohns.onrender.com/api/health
-
-## 📌 Assignment Submission Links
-
-- 🌐 User Side Deployed Link: https://canova-crm-frontend.netlify.app/user/login
-- 🧭 Management Side Deployed Link: https://canova-crm-frontend.netlify.app/admin/dashboard
-- ⚙️ Backend Deployed Link: https://canova-crm-ohns.onrender.com/api/health
-- 💾 GitHub Repository Link: `<add-your-repo-link-here>`
 
 ## 🎯 Features
 
@@ -96,32 +88,4 @@ Frontend usually runs on `http://localhost:5173`.
 - `npm run build` - Build frontend for production
 - `npm run preview` - Preview production build
 
-## ☁️ Deployment Notes
 
-### Netlify (Frontend)
-
-- Build command: `npm run build`
-- Publish directory: `dist`
-- Env var:
-  - `VITE_API_BASE_URL=https://canova-crm-ohns.onrender.com/api`
-
-### Render (Backend)
-
-- Build command: `npm install`
-- Start command: `npm run server`
-- Required env vars:
-  - `MONGODB_URI`
-  - `JWT_SECRET`
-  - `JWT_EXPIRE=7d`
-  - `NODE_ENV=production`
-  - `CORS_ORIGINS=https://canova-crm-frontend.netlify.app`
-
-## 🧪 Troubleshooting
-
-- ❗ If CORS errors appear, verify `CORS_ORIGINS` in Render and redeploy.
-- ❗ If CSV upload shows HTML/JSON parse error, verify `VITE_API_BASE_URL` points to backend `/api`.
-- ❗ If Render fails to connect to MongoDB Atlas, check Atlas IP whitelist (`0.0.0.0/0` for testing).
-
----
-
-💡 Built for evaluation + real deployment flow with a production-ready structure.
