@@ -43,49 +43,20 @@ An end-to-end CRM project with a modern admin dashboard, user-side workflow, and
 └─ package.json
 ```
 
-## 🛠️ Local Setup
-
-### 1) Clone and install
-
+## 🛠️ Local Run
 ```bash
-git clone <your-repo-url>
-cd canova-crm
 npm install
+npm run server
+npm run dev
 ```
 
-### 2) Create `.env` in project root
-
-Use `.env.example` as reference:
-
+Create `.env`:
 ```env
-MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>/<database>?retryWrites=true&w=majority
-JWT_SECRET=replace-with-strong-secret
+MONGODB_URI=<your-mongodb-uri>
+JWT_SECRET=<your-jwt-secret>
 JWT_EXPIRE=7d
 PORT=5050
 NODE_ENV=development
 CORS_ORIGINS=http://localhost:5173
 VITE_API_BASE_URL=http://localhost:5050/api
 ```
-
-### 3) Start backend
-
-```bash
-npm run server
-```
-
-### 4) Start frontend
-
-```bash
-npm run dev
-```
-
-Frontend usually runs on `http://localhost:5173`.
-
-## 📜 Available Scripts
-
-- `npm run dev` - Start Vite frontend
-- `npm run server` - Start Express backend
-- `npm run build` - Build frontend for production
-- `npm run preview` - Preview production build
-
-
