@@ -2275,7 +2275,7 @@ function AdminLeads() {
                         return;
                       }
 
-                      fetch("/api/parse-csv", {
+                      fetch(`${API_BASE_URL}/parse-csv`, {
                         method: "POST",
                         headers: {
                           "Content-Type": "text/csv",
